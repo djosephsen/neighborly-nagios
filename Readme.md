@@ -20,7 +20,7 @@ need to boot and set up the vagrant box for the tutorial. To get set-up run:
 
 ```
 git clone git@github.com:djosephsen/neighborly-nagios.git
-cd neighborly-nagios 
+cd neighborly-nagios/vm
 vagrant up
 ```
 
