@@ -19,7 +19,7 @@ relatively large download.  The [vm](/vm) directory contains everything you
 need to boot and set up the vagrant box for the tutorial. To get set-up run: 
 
 ```
-git clone git@github.com:djosephsen/neighborly-nagios.git
+git clone https://github.com/djosephsen/neighborly-nagios.git
 cd neighborly-nagios/vm
 vagrant up
 ```
