@@ -9,7 +9,7 @@ service fcgiwrap status
 service php5-fpm status
 
 rm /etc/nginx/sites-enabled/default
-cp /vagrant/nagios.busycorp.com.conf /etc/nginx/sites-available/nagios.busycorp.com.conf
+cp /vagrant/conf/nagios.busycorp.com.conf /etc/nginx/sites-available/nagios.busycorp.com.conf
 ln -s /etc/nginx/sites-available/nagios.busycorp.com.conf /etc/nginx/sites-enabled
 
 echo '
