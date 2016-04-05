@@ -9,8 +9,13 @@ apt-get install -y screen
 apt-get install -y libgd2-xpm-dev
 apt-get install -y php5-fpm
 apt-get install -y spawn-fcgi fcgiwrap
-apt-get install -y nginx
 apt-get install -y unzip
+apt-get install -y apache2
+apt-get install -y php5
+apt-get install -y libapache2-mod-php5
+apt-get install -y php5-gd
+apt-get install -y php5-imagick
+php5enmod imagick
 
 #lolpython
 apt-get install -y python-dev

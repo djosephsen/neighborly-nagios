@@ -15,3 +15,6 @@ easy_install pip
 apt-get install -y nagios-plugins
 mkdir -p /usr/local/nagios/
 ln -s /usr/lib/nagios/plugins /usr/local/nagios/libexec
+
+wget https://assets.nagios.com/downloads/ncpa/ncpa-1.8.1-1.amd64.deb
+dpkg -i ncpa-1.8.1-1.amd64.deb

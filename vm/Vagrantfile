@@ -2,11 +2,22 @@ Vagrant.configure("2") do |config|
    config.vm.define "server" do |server|
 		server.vm.box = "trusty64"
 	   server.vm.provision :shell, :path => "server_bootstrap.sh"
+		server.vm.network :forwarded_port, guest: 22, host: 1234
 		server.vm.network "private_network", type: "dhcp"
 	end
    config.vm.define "client" do |client|
 		client.vm.box = "trusty64"
 	   client.vm.provision :shell, :path => "client_bootstrap.sh"
 		client.vm.network "private_network", type: "dhcp"
+	end
+   config.vm.define "icinga" do |icinga|
+		icinga.vm.box = "trusty64"
+	   icinga.vm.provision :shell, :path => "apache_bootstrap.sh"
+		icinga.vm.network "private_network", type: "dhcp"
+	end
+   config.vm.define "omd" do |omd|
+		omd.vm.box = "trusty64"
+	   omd.vm.provision :shell, :path => "apache_bootstrap.sh"
+		omd.vm.network "private_network", type: "dhcp"
 	end
 end
